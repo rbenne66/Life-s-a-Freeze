@@ -45,7 +45,9 @@
       </ul>
 		</div>
 </nav>
-
+<div id = "idname">
+    <canvas class="background"></canvas>
+</div>
 <script>
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
   const navbarLinks = document.getElementsByClassName('navbar-links')[0];
@@ -73,13 +75,12 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0];
 
         window.onload = function() {
     Particles.init ({
-  selector:'.background',
+  selector:'#idname',
   maxParticles: 450,
   });
   };
 </script>
 
-<canvas class="background"></canvas>
 
 <script src="path/to/particles.min.js"></script>
 </body>
