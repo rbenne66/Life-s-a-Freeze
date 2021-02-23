@@ -1,0 +1,137 @@
+*{
+  box-sizing: border-box;
+}
+html body{
+  margin: 0%;
+  padding: 0;
+}
+.background{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+body{
+  background: url(cool-background.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(26, 19, 19);
+}
+.brand-title{
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+.navbar-links ul{
+margin:0;
+padding-right:0;
+display: flex;
+}
+.navbar-links li{
+  list-style: none;
+  padding-right: 10px;
+}
+.navbar-links li a{
+  text-decoration: none;
+  color:rgb(102, 95, 95);
+  display: block;
+  padding: 1rem;
+}
+.navbar-links li:hover{
+  background-color: rgb(151, 150, 150);
+  border-radius: 10px;
+  box-shadow: -1px 10px 44px 0px rgba(0,0,0,0.75);
+}
+.toggle-button{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: rgb(14, 13, 13);
+  border-radius: 10px;
+}
+
+@media (max-width: 400px){
+  .toggle-button{
+    display: flex;
+  }
+  .navbar-links{
+    display: none;
+    width: 100%;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li{
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: 1rem .5rem;
+  }
+  .navbar-links.active{
+    display: flex
+  }
+
+}
+.btn {
+  color: rgb(177, 169, 169);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.btn:hover, .dropbtn:focus {
+  background-color:rgb(81, 80, 82);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-items {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(241, 230, 230, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-items a {
+  color: rgb(224, 206, 206);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-items a:hover {background-color: rgba(57, 56, 58, 0.657)}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
