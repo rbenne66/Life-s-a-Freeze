@@ -1,6 +1,6 @@
-
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+
 <head>
 	<title>Life's A Freeze</title>
 	<meta charset="utf-8">
@@ -10,6 +10,55 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 </head>
 <body>
+  <style type="text/css">
+
+    #slider {
+      overflow: hidden;
+    }
+    #slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      animation: 20s slider infinite;
+    }
+    
+    #slider figure img {
+      width: 20%;
+      float: left;
+    }
+    
+    @keyframes slider {
+      0% {
+        left: 0;
+      }
+      20% {
+        left: 0;
+      }
+      25% {
+        left: -100%;
+      }
+      45%{
+        left: -100%;
+      }
+      50%{
+        left: -200%;
+      }
+      70%{
+        left: -200%;
+      }
+      75%{
+        left: -300%;
+      }
+      95%{
+        left: -300%;
+      }
+      100%{
+        left: -400%;
+      }
+    }
+    
+    </style>
 <nav class="navbar">
 		<div class="brand-title"><p>Lifes a freeze</p></div>
     <a href="#" class="toggle-button">
@@ -19,7 +68,7 @@
     </a>
 		<div class="navbar-links">
       <ul>
-        <li><a href="#">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="#">Checkout</a></li>
         <li><div class="dropdown">
           <a href="#" onclick="myFunction()" class="btn">Products</a>
@@ -35,6 +84,67 @@
       </ul>
 		</div>
 </nav>
+<div class="container">
+  <div id="slider">
+    <figure>
+      <img src="chocolateslide.png">
+      <img src="marshmellowslide.png">
+      <img src="Taffyslide.png">
+      <img src="veggiesslide.png">
+      <img src="chocolateslide.png">
+    </figure>
+  </div>
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." autocomplete="none">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Your email.." autocomplete="none">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Phone Number:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="phone" name="phone" placeholder="Your phone number.." autocomplete="none">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">How'd you hear about us?</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="website">Website</option>
+          <option value="refferal">Friend</option>
+          <option value="refferal">Social Media</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Leave us a message!</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="What's on your mind?.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
 <script>
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
   const navbarLinks = document.getElementsByClassName('navbar-links')[0];
@@ -63,76 +173,53 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0];
         window.onload = function() {
     Particles.init ({
   selector:'.background',
-  maxParticles: 450,
+  maxParticles: 200,
+  sizeVariations:3,
+  connectParticles: true,
+  color: '#42C027',
+
+  responsive: [
+    {
+      breakpoint: 
+768
+,
+      options: {
+        maxParticles: 
+200
+,
+        color: 
+'#48F2E3'
+,
+        connectParticles: 
+false
+      }
+    }, {
+      breakpoint: 
+425
+,
+      options: {
+        maxParticles: 
+100
+,
+        connectParticles: 
+false
+      }
+    }, {
+      breakpoint: 
+320
+,
+      options: {
+        maxParticles: 
+0
+ 
+// disables particles.js
+      }
+    }
+  ]
   });
   };
 </script>
 <canvas class="background"></canvas>
 <script src="path/to/particles.min.js"></script>
 </body>
-
-<section>
-<style type="text/css">
-
-#slider {
-  overflow: hidden;
-}
-#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  animation: 20s slider infinite;
-}
-
-#slider figure img {
-  width: 20%;
-  float: left;
-}
-
-@keyframes slider {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45%{
-    left: -100%;
-  }
-  50%{
-    left: -200%;
-  }
-  70%{
-    left: -200%;
-  }
-  75%{
-    left: -300%;
-  }
-  95%{
-    left: -300%;
-  }
-  100%{
-    left: -400%;
-  }
-}
-
-</style>
-<body>
-
-    <div id="slider">
-      <figure>
-        <img src="chocolateslide.png">
-        <img src="marshmellowslide.png">
-        <img src="Taffyslide.png">
-        <img src="veggiesslide.png">
-        <img src="chocolateslide.png">
-      </figure>
-    </div>
-</body>
-</section>
-
 </html>
