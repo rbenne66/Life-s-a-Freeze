@@ -114,13 +114,53 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0];
         window.onload = function() {
     Particles.init ({
   selector:'.background',
-  maxParticles: 450,
+  maxParticles: 200,
+  sizeVariations:3,
+  connectParticles: true,
+  color: '#42C027',
+
+  responsive: [
+    {
+      breakpoint: 
+768
+,
+      options: {
+        maxParticles: 
+200
+,
+        color: 
+'#48F2E3'
+,
+        connectParticles: 
+false
+      }
+    }, {
+      breakpoint: 
+425
+,
+      options: {
+        maxParticles: 
+100
+,
+        connectParticles: 
+false
+      }
+    }, {
+      breakpoint: 
+320
+,
+      options: {
+        maxParticles: 
+0
+ 
+// disables particles.js
+      }
+    }
+  ]
   });
   };
 </script>
-
 <canvas class="background"></canvas>
-
 <script src="path/to/particles.min.js"></script>
 </body>
 </html>
