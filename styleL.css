@@ -13,6 +13,8 @@ html body{
   z-index: -1;
 }
 
+body {background-color: #f0fdee;}
+
 body{
   background-size: cover;
   height: 100%;
@@ -300,6 +302,8 @@ input[type=text] {
   }
   img {
     border-radius: 5px 5px 0 0;
+    max-width: auto;
+    height: auto;
   }
 
   
