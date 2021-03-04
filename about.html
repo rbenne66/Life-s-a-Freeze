@@ -16,12 +16,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styleL.css">
+  <link rel="stylesheet" type="text/css" href="second.css">
   <script src="index.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-		<div class="brand-title"><p>Lifes a freeze</p></div>
+  <div class="brand-title"><a href="index.html">Life's A Freeze</a></div>
     <a href="#" class="toggle-button">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -45,9 +45,16 @@
       </ul>
 		</div>
 </nav>
-<div id = "idname">
-    <canvas class="background"></canvas>
-</div>
+<footer>
+  <div class="footer">
+    <p>Email: lifesafreeze.com</p>
+    &copy;Copyright 2021 Lifesafreeze.com
+  </div>
+  <div class="social-links">
+    <a href="https://www.facebook.com/groups/881121445695973/" target="_blank"><img id="icon" src="https://img.icons8.com/ios-filled/50/000000/facebook--v2.png"/></a>
+    <a href="https://www.instagram.com/lifesafreeze/?hl=en" target="_blank"><img id="icon" src="https://img.icons8.com/ios/50/000000/instagram-new--v3.png"/></a>
+  </div>
+</footer>
 <script>
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
   const navbarLinks = document.getElementsByClassName('navbar-links')[0];
@@ -73,18 +80,11 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0];
           }
         };
 
-        window.onload = function() {
-    Particles.init ({
-  selector:'#idname',
-  maxParticles: 450,
-  });
-  };
 </script>
-
 
 <script src="path/to/particles.min.js"></script>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <div class="card">
   <img src="LAF icon blue.png" alt="Avatar" style="width:100%">
   <div class="container">
@@ -101,6 +101,5 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0];
   </div>
 </div>
 
-</body>
 </body>
 </html>
