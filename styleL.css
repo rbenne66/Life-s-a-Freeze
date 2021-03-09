@@ -47,13 +47,13 @@ display: flex;
   padding-right: 10px;
 }
 .navbar-links li a{
+  color:#ce71b7(102, 95, 95);
   text-decoration: none;
-  color:#5fa560(102, 95, 95);
   display: block;
   padding: 1rem;
 }
 .navbar-links li:hover{
-  background-color:#5fa560 ;
+  background-color:#306431 ;
   border-radius: 10px;
   box-shadow: -1px 10px 44px 0px rgb(30, 64, 31);
 }
@@ -110,10 +110,6 @@ display: flex;
   cursor: pointer;
 }
 
-/* Dropdown button on hover & focus */
-.btn:hover, .dropbtn:focus {
-  background-color: #5fa560;
-}
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -140,7 +136,7 @@ display: flex;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-items a:hover {background-color: rgb(30, 64, 31)}
+.dropdown-items a:hover {background-color: rgb(95, 167, 96)}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
