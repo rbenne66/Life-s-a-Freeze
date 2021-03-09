@@ -1,17 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<p>Life's A Freeze</title>
+	<title> Life's A Freeze</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styleL.css">
   <link rel="stylesheet" type="text/css" href="second.css">
   <script src="index.js"></script>
   <link rel="index.html">
-
 </head>
 <body onload="showSlides()">
-
 <nav class="navbar">
 		<div class="brand-title"><a href="index.html">Life's A Freeze</a></div>
     <a href="#" class="toggle-button">
@@ -37,102 +35,6 @@
       </ul>
 		</div>
 </nav>
-<div class="slideshow-container">
-
- 
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
-    <img src="gummyslide.png" style="width:100%">
-    <div class="text"><button>Shop Now</button></div>
-  </div>
-  
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 4</div>
-    <img src="marshmellowslide.png" style="width:100%">
-    <div class="text"><button>Shop Now</button></div>
-  </div>
-  
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
-    <img src="Taffyslide.png" style="width:100%">
-    <div class="text"><button>Shop Now</button></div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
-    <img src="veggiesslide.png" style="width:100%">
-    <div class="text"><button>Shop Now</button></div>
-  </div>
-  
- 
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-
-  <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  </div>
-  <a href="categories.html">Categories</a>
-  <div>
-    <title>Taffy</title>
-  </div>
-  
-  <form action="action_page.php">
-    <div class="row">
-      <div class="col-25">
-        <label for="fname">Name:</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name.." autocomplete="none">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="email">Email:</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="email" name="email" placeholder="Your email.." autocomplete="none">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="email">Phone Number:</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="phone" name="phone" placeholder="Your phone number.." autocomplete="none">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="country">How'd you hear about us?</label>
-      </div>
-      <div class="col-75">
-        <select id="country" name="country">
-          <option value="website">Website</option>
-          <option value="refferal">Friend</option>
-          <option value="refferal">Social Media</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="subject">Leave us a message!</label>
-      </div>
-      <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="What's on your mind?.." style="height:200px"></textarea>
-      </div>
-    </div>
-    <div class="row">
-      <input type="submit" value="Submit">
-      <input type="reset" name="reset" value="Clear Form">
-    </div>
-  </form>
-</div>
 <hr>
 <footer>
   <div class="footer">
@@ -144,30 +46,5 @@
     <a href="https://www.instagram.com/lifesafreeze/?hl=en" target="_blank"><img id="icon" src="https://img.icons8.com/ios/50/000000/instagram-new--v3.png"/></a>
   </div>
 </footer>
-<script>
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-  const navbarLinks = document.getElementsByClassName('navbar-links')[0];
-  
-  toggleButton.addEventListener('click', function(){
-  navbarLinks.classList.toggle('active')
-  });
-  
-        function myFunction() {
-          document.getElementById("items").classList.toggle("show");
-        }
-        
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
-            }
-          }
-        };
-</script>
 </body>
 </html>
