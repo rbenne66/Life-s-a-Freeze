@@ -20,6 +20,10 @@ body{
   height: 100%;
   width: 100%;
 }
+form{
+  padding-left: 200px;
+  padding-right: 200px;
+}
 
 
 .navbar{
@@ -186,6 +190,7 @@ input[type=reset] {
 
 /* Floating column for labels: 25% width */
 .col-25 {
+  padding-left: 10px;
   float: left;
   width: 100%;
   margin-top: 6px;
