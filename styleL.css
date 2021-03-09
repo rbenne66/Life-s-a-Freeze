@@ -306,6 +306,10 @@ img {
     max-width: auto;
     height: auto;
   }
+  #about-cards{
+    display: flex;
+    justify-content: space-evenly;
+  }
 
 
   
