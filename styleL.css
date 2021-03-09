@@ -209,7 +209,7 @@ input[type=text] {
 	box-sizing: border-box;
 	border-radius: 2%;
 
-  }
+}
 
   input[type=text]:hover {
 	border: 3px solid #555;
@@ -284,6 +284,9 @@ input[type=text] {
       left: -400%;
     }
   }
+  main{
+    display: flex;
+  }
 
 /* styling for info cards*/
 .card {
@@ -300,7 +303,7 @@ input[type=text] {
   .container {
     padding: 2px 16px;
   }
-  img {
+img {
     border-radius: 5px 5px 0 0;
     max-width: auto;
     height: auto;
