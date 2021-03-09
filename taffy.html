@@ -46,5 +46,30 @@
     <a href="https://www.instagram.com/lifesafreeze/?hl=en" target="_blank"><img id="icon" src="https://img.icons8.com/ios/50/000000/instagram-new--v3.png"/></a>
   </div>
 </footer>
+<script>
+  const toggleButton = document.getElementsByClassName('toggle-button')[0];
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+    
+    toggleButton.addEventListener('click', function(){
+    navbarLinks.classList.toggle('active')
+    });
+    
+          function myFunction() {
+            document.getElementById("items").classList.toggle("show");
+          }
+          
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          };
+  </script>
 </body>
 </html>
