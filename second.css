@@ -114,11 +114,15 @@ button:hover{
   to {opacity: 1}
 }
 
+.contact-footer{
+  display: flex;
+  justify-content: center;
 
+}
 
 .footer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     font-size: 20px;
     font-weight: bolder;
