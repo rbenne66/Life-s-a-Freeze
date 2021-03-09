@@ -27,6 +27,7 @@ body{
   justify-content: space-between;
   align-items: center;
   color: rgb(26, 19, 19);
+  font-family: verdana;
 }
 .brand-title{
   font-size: 1.5rem;
@@ -150,6 +151,7 @@ input[type=text], select, textarea{
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
+  font-family: verdana;
 }
 
 /* Style the label to display next to the inputs */
@@ -209,6 +211,7 @@ input[type=text] {
 	margin: 8px 0;
 	box-sizing: border-box;
 	border-radius: 2%;
+  font-family: verdana;
 
   }
 
@@ -218,6 +221,7 @@ input[type=text] {
 	animation-name: input;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
+  font-family: verdana;
 	
   }
   input[type=button], input[type=submit], input[type=reset] {
@@ -229,7 +233,8 @@ input[type=text] {
 	margin: 4px 2px;
 	cursor: pointer;
 	width: 100%;
-	border-radius:1em;}
+	border-radius:1em;
+  font-family: verdana;}
 
   /* styling for input field labels*/
   label{
@@ -293,6 +298,8 @@ input[type=text] {
   border-radius: 5px;
   width: 40%;
   padding: 15px;
+  font-family: verdana;
+  color: rgb(30, 64, 31);
   
    }
   .card:hover {
