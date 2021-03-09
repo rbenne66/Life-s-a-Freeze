@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang = "en">
+<link rel="shortcut icon" type = "img/png" href="img/turn.png">
+<link rel = "Stylesheet" href = "styleL.css">
+<link rel="index.html">
+</head>
+
+<body id = "body">
+    
+
+<head>
+  <title>About</title>
+	<title>Life's A Freeze</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styleL.css">
+  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+		<div class="brand-title"><p>Lifes a freeze</p></div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+		<div class="navbar-links">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><div class="dropdown">
+          <a href="#" onclick="myFunction()" class="btn">Products</a>
+            <div class="dropdown-items" id="items">
+              <a href="taffy.html">Taffy</a>
+              <a href="candy.html">Candy</a>
+              <a href="desserts.html">Desserts</a>
+              <a href="chocolate.html">Chocolate</a>
+              <a href="healthysnacks.html">Healthy Snacks</a>
+              <a href="viewall.html">View All</a>
+            </div>
+      </div></li>
+      </ul>
+		</div>
+    
+    <div> 
+      img
+    </div>https://cdn.shopify.com/s/files/1/0437/7178/9466/files/IMG_E0470_503x.JPG?v=1595252129
+</nav>
+<footer>
+  <footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="social-wrapper">
+      <ul>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo" class="twitter-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo" class="instagram-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://www.columbia.edu/~ml3720/linkedin.jpg" alt="Linkedin Logo" class="linkedin-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico" alt="Facebook Logo" class="facebook-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="http://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-plus-icon.png" alt="Googleplus Logo" class="googleplus-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://lh3.googleusercontent.com/j_RwVcM9d47aBDW5DS1VkdxUYCkDUCB6wZglv4x-9SmsxO0VaFs7Csh-FmKRCWz9r_Ef=w170" alt="Youtube Logo" class="youtube-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="http://www.iconarchive.com/download/i94258/designbolts/vector-foursquare/Foursquare-2.ico" alt="Foursquare Logo" class="foursquare-icon"></a>
+        </li>
+      </ul>
+    </div>
+  
+    <nav class="footer-nav" role="navigation">
+      <p>Copyright &copy; 2013-
+        <?php echo date("Y"); ?> Cisco Rendon. All rights reserved.</p>
+    </nav>
+  </footer>
+  <!-- #colophon -->
+</footer>
+
+
+<div id = "idname">
+    <canvas class="background"></canvas>
+</div>
+<script>
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+  const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+  
+  toggleButton.addEventListener('click', function(){
+  navbarLinks.classList.toggle('active')
+  });
+  
+        function myFunction() {
+          document.getElementById("items").classList.toggle("show");
+        }
+        
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        };
+
+        window.onload = function() {
+    Particles.init ({
+  selector:'#idname',
+  maxParticles: 450,
+  });
+  };
+</script>
+
+
+<script src="path/to/particles.min.js"></script>
+</body>
+</html>
+</body>
+</html>
