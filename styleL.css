@@ -30,7 +30,7 @@ form{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgb(26, 19, 19);
+  color: rgb(30, 64, 31);
   font-family: verdana;
 }
 .brand-title{
@@ -48,14 +48,14 @@ display: flex;
 }
 .navbar-links li a{
   text-decoration: none;
-  color:#4CAF50(102, 95, 95);
+  color:#5fa560(102, 95, 95);
   display: block;
   padding: 1rem;
 }
 .navbar-links li:hover{
-  background-color:#4CAF50 ;
+  background-color:#5fa560 ;
   border-radius: 10px;
-  box-shadow: -1px 10px 44px 0px rgba(0,0,0,0.75);
+  box-shadow: -1px 10px 44px 0px rgb(30, 64, 31);
 }
 .toggle-button{
   position: absolute;
@@ -70,7 +70,7 @@ display: flex;
 .toggle-button .bar{
   height: 3px;
   width: 100%;
-  background-color: rgb(14, 13, 13);
+  background-color: #5fa560;
   border-radius: 10px;
 }
 
@@ -103,7 +103,7 @@ display: flex;
 
 }
 .btn {
-  color: black (177, 169, 169);
+  color: rgb(255, 121, 197);
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -112,7 +112,7 @@ display: flex;
 
 /* Dropdown button on hover & focus */
 .btn:hover, .dropbtn:focus {
-  background-color: forest green;
+  background-color: #5fa560;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -127,20 +127,20 @@ display: flex;
   position: absolute;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px ;
-  background-color: yellow;
+  background-color: rgb(30, 64, 31);
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-items a {
-  color: black;
+  color: rgb(240, 253, 238);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-items a:hover {background-color: #4CAF50}
+.dropdown-items a:hover {background-color: rgb(30, 64, 31)}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
@@ -332,5 +332,9 @@ img {
     justify-content: space-evenly;
   }
 
+  hr.new1 {
+    border: 10px solid rgb(255, 121, 197);
+    border-radius: 5px;
+  }
 
   
