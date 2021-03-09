@@ -52,11 +52,6 @@ display: flex;
   display: block;
   padding: 1rem;
 }
-.navbar-links li:hover{
-  background-color:#306431 ;
-  border-radius: 10px;
-  box-shadow: -1px 10px 44px 0px rgb(30, 64, 31);
-}
 .toggle-button{
   position: absolute;
   top: .75rem;
