@@ -32,6 +32,8 @@ form{
   align-items: center;
   color: rgb(30, 64, 31);
   font-family: verdana;
+  background-color: rgb(235, 235, 235);
+  padding-bottom: 5px;
 }
 .brand-title{
   font-size: 1.5rem;
@@ -324,7 +326,7 @@ img {
   }
 
   hr.new1 {
-    border: 10px solid rgb(255, 121, 197);
+    border: 1px solid rgb(255, 121, 197);
     border-radius: 5px;
   }
 
