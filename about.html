@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-	<title> Life's A Freeze</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="styleL.css">
+  <title> Life's A Freeze</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styleL.css">
   <link rel="stylesheet" type="text/css" href="second.css">
   <script src="index.js"></script>
   <link rel="index.html">
@@ -12,84 +13,90 @@
 
 <body onload="showSlides()">
   <nav class="navbar">
-		<div class="brand-title"><a href="index.html"><img src="LAFlogo.png" style="width: 50%; height: 100%; margin: 5px;" alt="company logo"></a></div>
+    <div class="brand-title"><a href="index.html"><img src="LAFlogo.png" style="width: 50%; height: 100%; margin: 5px;"
+          alt="company logo"></a></div>
     <a href="#" class="toggle-button">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
     </a>
-		<div class="navbar-links">
+    <div class="navbar-links">
       <ul>
         <li><a href="about.html" style="  color: rgb(255, 121, 197);">About</a></li>
         <li><a href="checkout.html" style="  color: rgb(255, 121, 197);">Checkout</a></li>
-        <li><div class="dropdown">
-          <a href="#" onclick="myFunction()" class="btn">Products</a>
+        <li>
+          <div class="dropdown">
+            <a href="#" onclick="myFunction()" class="btn">Products</a>
             <div class="dropdown-items" id="items">
               <a href="taffy.html">Taffy</a>
-              <a href="candy.html">Candy</a>
+              <a href="candy.html">Stuff</a>
               <a href="desserts.html">Desserts</a>
               <a href="chocolate.html">Chocolate</a>
               <a href="healthysnacks.html">Healthy Snacks</a>
               <a href="viewall.html">View All</a>
             </div>
-      </div></li>
+          </div>
+        </li>
       </ul>
-		</div>
-</nav>
-<hr class="new1">
-<main id="about-cards">
-  <div class="card">
-    <img src="LAF icon blue.png" alt="Avatar" style="width:100%">
-    <div class="container">
-      <h4><b>Whitney Burrows</b></h4>
-      <p>Daughter</p>
     </div>
-  </div>
+  </nav>
+  <hr class="new1">
+  <main id="about-cards">
+    <div class="card">
+      <img src="LAF icon blue.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Whitney Burrows</b></h4>
+        <p>Daughter</p>
+      </div>
+    </div>
 
-  <div class="card">
-    <img src="LAF icon skittles.png" alt="Avatar" style="width:100%">
-    <div class="container">
-      <h4><b>Tracy Wilson</b></h4>
-      <p>Mother</p>
+    <div class="card">
+      <img src="LAF icon skittles.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Tracy Wilson</b></h4>
+        <p>Mother</p>
+      </div>
     </div>
-  </div>
-</main>
-<hr class="new1">
-<footer>
-  <div class="footer">
-    <p>Email: lifesafreeze.com</p>
-    &copy;Copyright 2021 Lifesafreeze.com
-  </div>
-  <div class="social-links">
-    <a href="https://www.facebook.com/groups/881121445695973/" target="_blank"><img id="icon" src="https://img.icons8.com/ios-filled/50/000000/facebook--v2.png"/></a>
-    <a href="https://www.instagram.com/lifesafreeze/?hl=en" target="_blank"><img id="icon" src="https://img.icons8.com/ios/50/000000/instagram-new--v3.png"/></a>
-  </div>
-</footer>
-<script>
-  const toggleButton = document.getElementsByClassName('toggle-button')[0];
+  </main>
+  <hr class="new1">
+  <footer>
+    <div class="footer">
+      <p>Email: lifesafreeze.com</p>
+      &copy;Copyright 2021 Lifesafreeze.com
+    </div>
+    <div class="social-links">
+      <a href="https://www.facebook.com/groups/881121445695973/" target="_blank"><img id="icon"
+          src="https://img.icons8.com/ios-filled/50/000000/facebook--v2.png" /></a>
+      <a href="https://www.instagram.com/lifesafreeze/?hl=en" target="_blank"><img id="icon"
+          src="https://img.icons8.com/ios/50/000000/instagram-new--v3.png" /></a>
+    </div>
+  </footer>
+  <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0];
     const navbarLinks = document.getElementsByClassName('navbar-links')[0];
-    
-    toggleButton.addEventListener('click', function(){
-    navbarLinks.classList.toggle('active')
+
+    toggleButton.addEventListener('click', function () {
+      navbarLinks.classList.toggle('active')
     });
-    
-          function myFunction() {
-            document.getElementById("items").classList.toggle("show");
+
+    function myFunction() {
+      document.getElementById("items").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
           }
-          
-          window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-              var dropdowns = document.getElementsByClassName("dropdown-content");
-              var i;
-              for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                  openDropdown.classList.remove('show');
-                }
-              }
-            }
-          };
+        }
+      }
+    };
   </script>
 
 </body>
+
 </html>
