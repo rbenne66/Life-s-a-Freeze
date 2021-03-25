@@ -26,3 +26,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+alert("Welcome to your new obsession!" + " " + "We are excited to share the art of freeze dried treats and sweets with you!" );

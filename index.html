@@ -6,17 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styleL.css">
   <link rel="stylesheet" type="text/css" href="second.css">
-  <script src="index.js"></script>
   <link rel="index.html">
 </head>
 
 <body onload="showSlides()">
 <nav class="navbar">
-  <a class="navbar-brand" href="index.html">
-    <div class="brand-image">
-          <img src="LAFlogo.png" class="img-fluid">
-    </div>
-  </a>
+		<div class="brand-title"><a href="index.html"><img src="LAFlogo.png" style="width: 50%; height: 100%; margin: 5px;" alt="company logo"></a></div>
     <a href="#" class="toggle-button">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -27,7 +22,7 @@
         <li><a href="about.html" style="   color: rgb(30, 64, 31);">About</a></li>
         <li><a href="checkout.html" style="    color: rgb(30, 64, 31);">Checkout</a></li>
         <li><div class="dropdown">
-          <a href="#" onclick="myFunction()" class="btn" style="   color: rgb(30, 64, 31);">Products</a>
+          <a href="#" onclick="myFunction()" class="btn" style="color: rgb(30, 64, 31);">Products</a>
             <div class="dropdown-items" id="items">
               <a href="taffy.html">Taffy</a>
               <a href="candy.html">Candy</a>
@@ -97,7 +92,7 @@
   </div>
 </footer>
 <script>
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
+  const toggleButton = document.getElementsByClassName('toggle-button')[0];
   const navbarLinks = document.getElementsByClassName('navbar-links')[0];
   
   toggleButton.addEventListener('click', function(){
@@ -121,5 +116,6 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0];
           }
         };
 </script>
+<script src="index.js"></script>
 </body>
 </html>
