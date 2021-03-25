@@ -312,7 +312,7 @@ input[type=text] {
   box-shadow: 0 4px 8px 0 rgb(39, 85, 40);
   transition: 1s;
   border-radius: 5px;
-  height: 400px;
+  height: 500px;
   width: 30%;
   padding: 15px;
   font-family: verdana;
@@ -320,7 +320,7 @@ input[type=text] {
 }
 .container-about{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
